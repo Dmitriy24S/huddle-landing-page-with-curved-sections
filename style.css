@@ -242,3 +242,41 @@ footer article {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+/* hover */
+@media (hover) {
+  .header-btn:hover {
+    background-color: transparent;
+    opacity: 0.6;
+  }
+  .btn:hover {
+    cursor: pointer;
+    background-color: hsl(321, 100%, 78%);
+  }
+  .social-links .fab:hover {
+    cursor: pointer;
+    color: rgb(64, 192, 224);
+  }
+}
+@media (min-width: 1078px) {
+  /* main */
+  .intro-img {
+    max-width: 50rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .stats-container {
+    flex-direction: row;
+    gap: 10rem;
+  }
+  .pair-block {
+    flex-direction: row;
+    gap: 5rem;
+  }
+  .light-blue-bg {
+    flex-direction: row-reverse;
+  }
+  .text-block {
+    max-width: 34rem;
+    text-align: left;
+  }
+}
