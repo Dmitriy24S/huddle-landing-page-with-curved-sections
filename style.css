@@ -279,4 +279,44 @@ footer article {
     max-width: 34rem;
     text-align: left;
   }
+  /* footer desktop */
+  .footer-bg {
+    background-image: url(images/bg-footer-top-desktop.svg);
+    height: 213px;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 3rem;
+  }
+  .footer-left-block {
+    width: 50%;
+    max-width: 30rem;
+  }
+  .footer-right-block {
+    width: 50%;
+    max-width: 45rem;
+  }
+  form {
+    flex-direction: row;
+    align-items: center;
+  }
+  /* main - sections bg imgs */
+  .section-first-top {
+    background-image: url(images/bg-section-top-desktop-1.svg);
+    height: 314px;
+  }
+  .section-first-bottom {
+    background-image: url(images/bg-section-bottom-desktop-1.svg);
+    height: 170px;
+  }
+  .section-second-top {
+    background-image: url(images/bg-section-top-desktop-2.svg);
+    height: 314px;
+  }
+  .section-second-bottom {
+    background-image: url(images/bg-section-bottom-desktop-2.svg);
+    height: 170px;
+  }
 }
