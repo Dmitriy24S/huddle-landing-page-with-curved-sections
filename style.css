@@ -175,6 +175,24 @@ form input {
   border: none;
   font-size: 1rem;
 }
+/* form error */
+form.error .error-img {
+  display: block;
+}
+form.error small {
+  visibility: visible;
+}
+.error-text {
+  text-align: left;
+  color: hsl(0, 100%, 63%);
+  font-weight: 700;
+  padding-left: 8px;
+  display: block;
+  visibility: hidden;
+}
+.error input {
+  border: 2px solid hsl(0, 100%, 63%);
+}
 /* footer */
 .logo-footer {
   filter: contrast(0.5) brightness(5);
@@ -244,13 +262,13 @@ footer article {
 }
 /* hover */
 @media (hover) {
-  .header-btn:hover {
-    background-color: transparent;
-    opacity: 0.6;
-  }
   .btn:hover {
     cursor: pointer;
     background-color: hsl(321, 100%, 78%);
+  }
+  .header-btn:hover {
+    background-color: transparent;
+    opacity: 0.6;
   }
   .social-links .fab:hover {
     cursor: pointer;
