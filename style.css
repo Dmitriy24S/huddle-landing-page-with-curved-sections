@@ -33,8 +33,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 6rem;
-  padding: 2rem 3rem;
+  padding: 2rem 1rem;
 }
 .header-logo {
   width: 130px;
@@ -49,6 +48,7 @@ main {
 main p {
   color: hsl(192, 100%, 9%);
   font-size: 1.1rem;
+  max-width: 30rem;
 }
 article {
   display: flex;
@@ -56,7 +56,7 @@ article {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  padding: 3rem;
+  padding: 3rem 2rem;
 }
 .light-blue-bg {
   background-color: hsl(207, 100%, 98%);
@@ -64,6 +64,7 @@ article {
 .illustration {
   width: 40%;
   max-width: 32rem;
+  min-width: 20rem;
 }
 .pair-block {
   display: flex;
@@ -80,6 +81,7 @@ article {
   width: 87%;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  min-width: 20rem;
 }
 .intro p {
   max-width: 32rem;
@@ -95,8 +97,8 @@ article {
 .stat-block {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
+  align-items: center;
+  text-align: center;
   gap: 0.3rem;
 }
 .stat-block img {
@@ -160,6 +162,7 @@ article {
   width: 50%;
   align-self: flex-end;
   font-size: 1rem;
+  min-width: 12rem;
 }
 /* form */
 form {
@@ -275,6 +278,14 @@ footer article {
     color: rgb(64, 192, 224);
   }
 }
+@media (min-width: 700px) {
+  /* header */
+  header {
+    padding: 2rem 3rem;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+}
 @media (min-width: 1078px) {
   /* main */
   .intro-img {
@@ -296,6 +307,11 @@ footer article {
   .text-block {
     max-width: 34rem;
     text-align: left;
+  }
+  .stat-block {
+    align-items: center;
+    text-align: center;
+    max-width: 25rem;
   }
   /* footer desktop */
   .footer-bg {
@@ -319,6 +335,9 @@ footer article {
   form {
     flex-direction: row;
     align-items: center;
+  }
+  .footer-btn {
+    align-self: center;
   }
   /* main - sections bg imgs */
   .section-first-top {
